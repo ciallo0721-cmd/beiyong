@@ -460,47 +460,45 @@
                 这是91vip.xn--32v.ink的备用域名<br>主站91vip.xn--32v.ink<br>如果遇到了什么事需要用这个域名<br>发邮件到ciallo0721cmd@gmail.com
             </p>
         </div> 
-        <!--歌曲是time to say goodbye(duet"KOKIA & Piano")-->
-        <!--改成清新的小女孩-->
+        <!--歌曲是关注塔菲谢谢喵-->
         <div class="music-player">
             <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=2722442265&auto=1&height=66"></iframe>
         </div>
         
-        <!-- 导航栏部分 -->
+        <!-- 导航栏部分,抄自91vip.xn--32v.ink -->
+        <div class="navigation">
+            <h3>友链</h3>
+            <div class="nav-links">
+                <a href="https://github.com/ciallo0721-cmd/" class="nav-link">
+                    <i></i> 站长github
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="https://91vip.xn--32v.ink" class="nav-link">
+                    <i></i>主站
+                </a>
+            </div>
+            </div>
+            <div class="nav-links">
+                <a href="https://free.rensen.uno" class="nav-link">
+                    <i"></i>域名商
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/ciallo0721-cmd/MoeFace" class="nav-link">
+                    <i"></i>人脸识别项目(还是站长写的)
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/ciallo0721-cmd/url-masker" class="nav-link">
+                    <i></i>url加密项目(还是站长写的)
+                </a>
+            </div>
+            <p class="note">点击上方按钮可以访问其他页面</p>
         </div>
     </div>
 
-    <script>
-        // 添加一些交互效果
-        document.addEventListener('DOMContentLoaded', function() {
-            // 为导航链接添加点击效果
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = '';
-                    }, 200);
-                });
-            });
-            
-            // 添加键盘快捷键支持
-            document.addEventListener('keydown', function(e) {
-                // ESC键回到页面顶部
-                if (e.key === 'Escape') {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-                
-                // 数字键1-6快速访问链接
-                if (e.key >= '1' && e.key <= '6') {
-                    const index = parseInt(e.key) - 1;
-                    const links = document.querySelectorAll('.nav-link');
-                    if (links[index]) {
-                        links[index].click();
-                    }
-                }
-            });
-        });
-    </script>
+        </div>
+    </div>
 </body>
 </html>
